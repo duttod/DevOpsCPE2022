@@ -1,0 +1,27 @@
+version: '3.7'
+
+services:
+ backend:
+  build: tp1_backend_api/simple-api-main/simple-api/
+  networks:
+     - tp1_network
+  depends_on: 
+     - database
+
+ database:
+  build: tp1_db_docker/
+  networks: 
+     - tp1_network
+
+ httpd:
+  build: tp1_http_server/
+  ports:
+    - "80:80"
+  networks: 
+    - tp1_network
+  depends_on: 
+     - backend
+#TODO
+networks:
+ tp1_network:
+    driver: bridge
