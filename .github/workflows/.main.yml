@@ -16,4 +16,4 @@ jobs:
        distribution: 'adopt'
 
     - name: Build and test with Maven
-      run: mvn clean verify
+      run: mvn clean verify --file tp1_backend_api/simple-api-main/simple-api
