@@ -16,6 +16,8 @@ jobs:
        distribution: 'adopt'
 
     - name: Build and test with Maven
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run : mvn -B verify sonar:sonar -Dsonar.projectKey=duttod_DevOpsCPE2022 -Dsonar.organization=duttodsonarkey4 -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=${{secrets.SONAR_TOKEN }} --file tp1_backend_api/simple-api-main/simple-api/pom.xml
       #run: mvn cclean verify --file tp1_backend_api/simple-api-main/simple-api
 
