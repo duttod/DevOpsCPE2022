@@ -58,6 +58,6 @@ jobs:
     - name: Build image and push frontend
       uses: docker/build-push-action@v2
       with:
-        context: tp1_frontend
+        context: tp1_frontend/devops-front-main
         tags: ${{secrets.DOCKERHUB_USERNAME}}/tp-devops-cpe:frontend
         push: ${{ github.ref == 'refs/heads/main'}}
