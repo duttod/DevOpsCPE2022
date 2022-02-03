@@ -1,0 +1,12 @@
+- name: Log into DockerHub
+  docker_login:
+    username: duttod38
+    password: Zouinadj38*
+    email: drissdutto@hotmail.fr
+
+- name: Upload backend application
+  docker_container: 
+   name: backend
+   image: duttod38/tp-devops-cpe:simple-api
+   networks:
+    - name: network_app

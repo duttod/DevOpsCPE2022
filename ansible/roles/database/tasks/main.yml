@@ -1,0 +1,13 @@
+- name: Log into DockerHub
+  docker_login:
+    username: duttod38
+    password: Zouinadj38*
+    email: drissdutto@hotmail.fr
+
+- name: Create Postgres db
+  docker_container: 
+   name: database
+   image: duttod38/tp-devops-cpe:database
+   networks:
+    - name: network_app
+     

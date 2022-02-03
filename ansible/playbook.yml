@@ -1,0 +1,10 @@
+- hosts: all
+  gather_facts: false
+  become: yes
+  roles:
+    - docker
+  tasks:
+
+  - name: Make sure docker is running
+    service: name=docker state=started
+    tags: docker

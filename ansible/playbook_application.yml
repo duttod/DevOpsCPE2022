@@ -1,0 +1,15 @@
+- hosts: all
+  gather_facts: false
+  become: yes
+  roles:
+    - network
+    - database
+    - app
+    - httpd_proxy
+  tasks:
+
+  - name: Make sure docker is running
+    service: name=docker state=started
+    tags: docker
+
+    

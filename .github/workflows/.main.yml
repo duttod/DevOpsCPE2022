@@ -54,3 +54,10 @@ jobs:
         context: tp1_http_server
         tags: ${{secrets.DOCKERHUB_USERNAME}}/tp-devops-cpe:httpd
         push: ${{ github.ref == 'refs/heads/main'}}
+
+    - name: Build image and push frontend
+      uses: docker/build-push-action@v2
+      with:
+        context: tp1_frontend
+        tags: ${{secrets.DOCKERHUB_USERNAME}}/tp-devops-cpe:frontend
+        push: ${{ github.ref == 'refs/heads/main'}}

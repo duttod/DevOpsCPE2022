@@ -1,0 +1,8 @@
+  - name: Clean package and Install device-mapper-persistent-data
+    import_tasks: initpck.yml
+
+  - name: Install docker
+    import_tasks: installdocker.yml
+
+  - name: Install python3 and pip
+    import_tasks: installPython.yml

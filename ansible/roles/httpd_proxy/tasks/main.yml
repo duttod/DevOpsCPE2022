@@ -1,0 +1,14 @@
+- name: Log into DockerHub
+  docker_login:
+    username: duttod38
+    password: Zouinadj38*
+    email: drissdutto@hotmail.fr
+
+- name: Run httpd proxy
+  docker_container: 
+   name: httpd
+   image: duttod38/tp-devops-cpe:httpd
+   ports:
+    - "80:80"
+   networks:
+    - name: network_app
