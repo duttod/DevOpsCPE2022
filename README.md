@@ -99,7 +99,12 @@ Je peux vérifier que le déploiement à bien fonctionné dans la page action de
 <h3>QUALITY GATE</h3>
 
 Nous avons choisis d'utiliser sonar afin de vérifier notre code, pour se faire nous avons passer en paramétre nos clés SONAR et l'organization dans laquel les vérifications doivent effectué.
+<br>
+La conf Sonar se trouve ici [sonar](https://github.com/duttod/DevOpsCPE2022/blob/main/.github/workflows/.main.yml)
+
 Ma vérification Sonar à bien été exécuter cependant elle n'est pas validé car sonar détécte 2 vulnérabilités graves et il lui en faut 0 pour être accepté.
 ![img](https://github.com/duttod/DevOpsCPE2022/blob/main/img/Sonar.png)
+
+
 
 
