@@ -31,5 +31,5 @@ Voici le dockerfile pour la DB : [Dockerfile](https://github.com/duttod/DevOpsCP
 
 Voici les commandes utilisés afin de produire l'api backend a travers un docker (build et lancement):
 
-Build: sudo docker build -t driss/back_api .
+Build: sudo docker build -t driss/back_api . <br>
 Lancement: sudo docker run -p 8080:8080 --network tp1_network  --name tp1_back_api driss/back_api
