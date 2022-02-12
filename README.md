@@ -117,3 +117,7 @@ Afin de simplifier le déploiement avec ansible j'ai créer un role pour chacun 
 [app conf](https://github.com/duttod/DevOpsCPE2022/blob/main/ansible/roles/app/tasks/main.yml)<br>
 [docker install](https://github.com/duttod/DevOpsCPE2022/blob/main/ansible/roles/docker/tasks/main.yml)<br>
 
+
+Il est important de créer un network dans la machine distante afin que tout nos composants puisse communiquer entre eux.
+
+[network conf](https://github.com/duttod/DevOpsCPE2022/blob/main/ansible/roles/network/tasks/main.yml)
