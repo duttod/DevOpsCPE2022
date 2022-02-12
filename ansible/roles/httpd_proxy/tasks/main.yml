@@ -1,7 +1,7 @@
 - name: Log into DockerHub
   docker_login:
     username: duttod38
-    password: Zouinadj38*
+    password: ******
     email: drissdutto@hotmail.fr
 
 - name: Run httpd proxy
