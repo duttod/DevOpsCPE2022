@@ -7,7 +7,7 @@ Voici les commandes utilisés afin de produire la base de données a travers un 
 
 Build: sudo docker build -t driss/postgres .
 
-Lancement:sudo docker run -p 7979:5432 --name tp1_db driss/postgres
+Lancement:sudo docker run -p 7979:5432 --network tp1_network --name tp1_db driss/postgres
 
 1)Why should we run the container with a flag -e to give the environment variables ?
 
@@ -23,6 +23,13 @@ psql -U usr -d db -p 7979
 
 2)Why do we need a volume to be attached to our postgres container ?
 
-Nous utilisons un volume pour éviter à la structure et les données de la base d'être détruite à chaque redémarrage du container.
+Nous utilisons un volume pour éviter à la structure et les données de la base d'être détruite à chaque redémarrage du container ou a sa suppression.
 
 Voici le dockerfile pour la DB : [Dockerfile](https://github.com/duttod/DevOpsCPE2022/blob/main/tp1_db_docker/Dockerfile)
+
+<h3>BACKEND API</h3>
+
+Voici les commandes utilisés afin de produire l'api backend a travers un docker (build et lancement):
+
+Build: sudo docker build -t driss/back_api .
+Lancement: sudo docker run -p 8080:8080 --network tp1_network  --name tp1_back_api driss/back_api
