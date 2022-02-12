@@ -5,6 +5,7 @@
 <h3>POSTGRES</h3>
 Voici les commandes utilisés afin de produire la base de données a travers un docker (build et lancement):
 
+
 Build: sudo docker build -t driss/postgres . <br>
 Lancement:sudo docker run -p 7979:5432 --network tp1_network --name tp1_db driss/postgres
 
