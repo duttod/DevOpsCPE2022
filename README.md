@@ -97,7 +97,7 @@ Je peux vérifier que le déploiement à bien fonctionné dans la page action de
 
 <h3>QUALITY GATE</h3>
 
-Nous avons choisis d'utiliser sonar afin de vérifier notre code pour se faire nous avons passer en paramétre nos clés SONAR et l'organization dans laquel les vérifications doivent effectué.
+Nous avons choisis d'utiliser sonar afin de vérifier notre code, pour se faire nous avons passer en paramétre nos clés SONAR et l'organization dans laquel les vérifications doivent effectué.
 
 
 
