@@ -71,7 +71,7 @@ Il contient une référence au trois docker précédent (database,API,web_server
 Pour publier une image il faut utiliser les commandes suivantes.
 
 docker login <br>
-docker tag <tagname> <image>
+docker tag <tagname> <image> <br>
 docker push <image>
 
 
