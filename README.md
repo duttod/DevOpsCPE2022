@@ -75,7 +75,7 @@ docker tag tagname mon_image_local <br>
 docker push duttod38/tp-devops-cpe:tagname
 
 Je peux consulter les images sur mon Dockerhub
-
+![img](https://github.com/duttod/DevOpsCPE2022/blob/main/img/docker_hub_image.png)
 <h2>TP2 GIT ET GITHUB ACTIONS</h2>
 
 1)mvn clean verify what is it supposed to do ?
@@ -94,10 +94,12 @@ Nous utilisons les variables SECRET de github pour ne pas leak nos ID.
 Ce fichier contient aussi les commandes pour build et pousser les images docker sur le dockerhub.
 
 Je peux vérifier que le déploiement à bien fonctionné dans la page action de github et en vérifiant que mes nouvelles images sont sur le hub.
+![img](https://github.com/duttod/DevOpsCPE2022/blob/main/img/maven_github_action_succes.png)
 
 <h3>QUALITY GATE</h3>
 
 Nous avons choisis d'utiliser sonar afin de vérifier notre code, pour se faire nous avons passer en paramétre nos clés SONAR et l'organization dans laquel les vérifications doivent effectué.
-
+Ma vérification Sonar à bien été exécuter cependant elle n'est pas validé car sonar détécte 2 vulnérabilités graves et il lui en faut 0 pour être accepté.
+![img](https://github.com/duttod/DevOpsCPE2022/blob/main/img/Sonar.png)
 
 
