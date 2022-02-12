@@ -2,6 +2,7 @@
 
 <h2>TP1 DOCKER</h2>
 
+<h3>POSTGRES</h3>
 Voici les commandes utilisés afin de produire la base de données a travers un docker (build et lancement).
 
 sudo docker build -t driss/postgres .
@@ -23,4 +24,4 @@ psql -U usr -d db -p 7979
 
 Nous utilisons un volume pour éviter à la structure et les données de la base d'être détruite à chaque redémarrage du container.
 
-Voici le dockerfile pour la DB : [a link](https://github.com/duttod/DevOpsCPE2022/blob/main/tp1_db_docker/Dockerfile)
+Voici le dockerfile pour la DB : [Dockerfile](https://github.com/duttod/DevOpsCPE2022/blob/main/tp1_db_docker/Dockerfile)
