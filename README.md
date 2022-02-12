@@ -34,9 +34,14 @@ Voici les commandes utilisés afin de produire l'api backend a travers un docker
 Build: sudo docker build -t driss/back_api . <br>
 Lancement: sudo docker run -p 8080:8080 --network tp1_network  --name tp1_back_api driss/back_api
 
+Il est important de mettre l'API dans le même network que la base de données pour y accéder.
 Avant de lancer le container de l'API je suis aller modifier le fichier application.yml et j'ai remplacé les paramétres par celui de ma base de données.
 
 Je peux vérifier que mon API fonctionne en consultant les étudiants http://localhost:8080/departments/IRC/students.
+
+Voici le dockerfile pour l'API : [Dockerfile](https://github.com/duttod/DevOpsCPE2022/blob/main/tp1_http_server/Dockerfile)
+
+<h3>HTTP SERVER</h3>
 
 
 
