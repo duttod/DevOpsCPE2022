@@ -71,8 +71,10 @@ Il contient une référence au trois docker précédent (database,API,web_server
 Pour publier une image il faut utiliser les commandes suivantes.
 
 docker login <br>
-docker tag <tagname> <image> <br>
-docker push <image>
+docker tag tagname mon_image_local <br>
+docker push duttod38/tp-devops-cpe:tagname
+
+Je peux consulter les images sur mon Dockerhub
 
 
 
