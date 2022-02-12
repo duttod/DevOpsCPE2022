@@ -111,9 +111,9 @@ Ma vérification Sonar à bien été exécuter cependant elle n'est pas validé 
 
 Voici mon inventory ou j'y ai déclarer l'host fournit par Takima et comment le joindre :[inventory](https://github.com/duttod/DevOpsCPE2022/blob/main/ansible/inventories/setup.yml)
 
-Afin de simplifier le déploiement avec ansible j'ai créer un role pour chacun des éléments que je veux déployer sur mon serveur avec un task associé.
-[database_conf](https://github.com/duttod/DevOpsCPE2022/blob/main/ansible/roles/database/tasks/main.yml)
-[httpd_conf](https://github.com/duttod/DevOpsCPE2022/blob/main/ansible/roles/httpd_proxy/tasks/main.yml)
-[app conf](https://github.com/duttod/DevOpsCPE2022/blob/main/ansible/roles/app/tasks/main.yml)
-[docker install](https://github.com/duttod/DevOpsCPE2022/blob/main/ansible/roles/docker/tasks/main.yml)
+Afin de simplifier le déploiement avec ansible j'ai créer un role pour chacun des éléments que je veux déployer sur mon serveur avec une task associé.<br>
+[database_conf](https://github.com/duttod/DevOpsCPE2022/blob/main/ansible/roles/database/tasks/main.yml)<br>
+[httpd_conf](https://github.com/duttod/DevOpsCPE2022/blob/main/ansible/roles/httpd_proxy/tasks/main.yml)<br>
+[app conf](https://github.com/duttod/DevOpsCPE2022/blob/main/ansible/roles/app/tasks/main.yml)<br>
+[docker install](https://github.com/duttod/DevOpsCPE2022/blob/main/ansible/roles/docker/tasks/main.yml)<br>
 
