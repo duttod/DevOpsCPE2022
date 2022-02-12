@@ -76,5 +76,28 @@ docker push duttod38/tp-devops-cpe:tagname
 
 Je peux consulter les images sur mon Dockerhub
 
+<h2>TP2 GIT ET GITHUB ACTIONS</h2>
+
+1)mvn clean verify what is it supposed to do ?
+
+Cette commande permet de clean le  build précédent et de charger tout les modules dépendant , elle effectue aussi les test déclarés dans l'application.
+Elle utilise le fichier pom.xml du répértoire courant (dans son état actuel mais on peut lui spécifier un fichier) 
+
+2) Unit tests ? Component test ?
+
+Les tests unitaires sont une méthode de test qui vise à tester des composantes individuelles du codes et vérifier leurs fonctionnement (package,module,fonction ...)
+Les tests d'intégrations sont utilisés pour tester les modules en tant que groupe lors du regroupement de plusieurs source par exemple.
+
+Voici mon fichier .main.yml [github action file](https://github.com/duttod/DevOpsCPE2022/blob/main/.github/workflows/.main.yml)
+
+Nous utilisons les variables SECRET de github pour ne pas leak nos ID.
+Ce fichier contient aussi les commandes pour build et pousser les images docker sur le dockerhub.
+
+Je peux vérifier que le déploiement à bien fonctionné dans la page action de github et en vérifiant que mes nouvelles images sont sur le hub.
+
+<h3>QUALITY GATE</h3>
+
+Nous avons choisis d'utiliser sonar afin de vérifier notre code pour se faire nous avons passer en paramétre nos clés SONAR et l'organization dans laquel les vérifications doivent effectué.
+
 
 
