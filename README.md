@@ -6,6 +6,7 @@
 Voici les commandes utilisés afin de produire la base de données a travers un docker (build et lancement).
 
 sudo docker build -t driss/postgres .
+
 sudo docker run -p 7979:5432 --name tp1_db driss/postgres
 
 1)Why should we run the container with a flag -e to give the environment variables ?
