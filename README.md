@@ -121,3 +121,7 @@ Afin de simplifier le déploiement avec ansible j'ai créer un role pour chacun 
 Il est important de créer un network dans la machine distante afin que tout nos composants puisse communiquer entre eux.
 
 [network conf](https://github.com/duttod/DevOpsCPE2022/blob/main/ansible/roles/network/tasks/main.yml)
+
+Du coup il ne nous reste juste a importer les rôles dans le playbook les taches associé aux rôles vont s'éxécuter d'elles mêmes 
+<br>
+[playbook](https://github.com/duttod/DevOpsCPE2022/blob/main/ansible/playbook_application.yml)
